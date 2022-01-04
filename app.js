@@ -11,7 +11,7 @@ body1 = document.querySelector(".bo");
 function randomQuote() {
   button.classList.add("loading");
   button.innerText = "Loading Quote...";
-  fetch("http://api.quotable.io/random")
+  fetch("https://api.quotable.io/random")
     .then((response) => response.json())
     .then((result) => {
       text.innerText = result.content;
